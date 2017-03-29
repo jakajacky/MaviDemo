@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F2C792B91E8BDD50000BBC7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C792B81E8BDD50000BBC7C /* main.m */; };
+		F2C792BC1E8BDD50000BBC7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C792BB1E8BDD50000BBC7C /* AppDelegate.m */; };
+		F2C792BF1E8BDD50000BBC7C /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C792BE1E8BDD50000BBC7C /* MasterViewController.m */; };
+		F2C792C21E8BDD50000BBC7C /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C792C11E8BDD50000BBC7C /* DetailViewController.m */; };
+		F2C792C51E8BDD50000BBC7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2C792C31E8BDD50000BBC7C /* Main.storyboard */; };
+		F2C792C71E8BDD50000BBC7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2C792C61E8BDD50000BBC7C /* Assets.xcassets */; };
+		F2C792CA1E8BDD50000BBC7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2C792C81E8BDD50000BBC7C /* LaunchScreen.storyboard */; };
+		F2C792D51E8BDD50000BBC7C /* LoHasBandAidTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C792D41E8BDD50000BBC7C /* LoHasBandAidTests.m */; };
+		F2C792E01E8BDD50000BBC7C /* LoHasBandAidUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C792DF1E8BDD50000BBC7C /* LoHasBandAidUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F2C792D11E8BDD50000BBC7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2C792AC1E8BDD50000BBC7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2C792B31E8BDD50000BBC7C;
+			remoteInfo = LoHasBandAid;
+		};
+		F2C792DC1E8BDD50000BBC7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2C792AC1E8BDD50000BBC7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2C792B31E8BDD50000BBC7C;
+			remoteInfo = LoHasBandAid;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F2C792B41E8BDD50000BBC7C /* LoHasBandAid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoHasBandAid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2C792B81E8BDD50000BBC7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F2C792BA1E8BDD50000BBC7C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F2C792BB1E8BDD50000BBC7C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F2C792BD1E8BDD50000BBC7C /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		F2C792BE1E8BDD50000BBC7C /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		F2C792C01E8BDD50000BBC7C /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		F2C792C11E8BDD50000BBC7C /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		F2C792C41E8BDD50000BBC7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F2C792C61E8BDD50000BBC7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2C792C91E8BDD50000BBC7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F2C792CB1E8BDD50000BBC7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2C792D01E8BDD50000BBC7C /* LoHasBandAidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoHasBandAidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2C792D41E8BDD50000BBC7C /* LoHasBandAidTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoHasBandAidTests.m; sourceTree = "<group>"; };
+		F2C792D61E8BDD50000BBC7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2C792DB1E8BDD50000BBC7C /* LoHasBandAidUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoHasBandAidUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2C792DF1E8BDD50000BBC7C /* LoHasBandAidUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoHasBandAidUITests.m; sourceTree = "<group>"; };
+		F2C792E11E8BDD50000BBC7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2C792B11E8BDD50000BBC7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2C792CD1E8BDD50000BBC7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2C792D81E8BDD50000BBC7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F2C792AB1E8BDD50000BBC7C = {
+			isa = PBXGroup;
+			children = (
+				F2C792B61E8BDD50000BBC7C /* LoHasBandAid */,
+				F2C792D31E8BDD50000BBC7C /* LoHasBandAidTests */,
+				F2C792DE1E8BDD50000BBC7C /* LoHasBandAidUITests */,
+				F2C792B51E8BDD50000BBC7C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F2C792B51E8BDD50000BBC7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2C792B41E8BDD50000BBC7C /* LoHasBandAid.app */,
+				F2C792D01E8BDD50000BBC7C /* LoHasBandAidTests.xctest */,
+				F2C792DB1E8BDD50000BBC7C /* LoHasBandAidUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2C792B61E8BDD50000BBC7C /* LoHasBandAid */ = {
+			isa = PBXGroup;
+			children = (
+				F2C792BA1E8BDD50000BBC7C /* AppDelegate.h */,
+				F2C792BB1E8BDD50000BBC7C /* AppDelegate.m */,
+				F2C792BD1E8BDD50000BBC7C /* MasterViewController.h */,
+				F2C792BE1E8BDD50000BBC7C /* MasterViewController.m */,
+				F2C792C01E8BDD50000BBC7C /* DetailViewController.h */,
+				F2C792C11E8BDD50000BBC7C /* DetailViewController.m */,
+				F2C792C31E8BDD50000BBC7C /* Main.storyboard */,
+				F2C792C61E8BDD50000BBC7C /* Assets.xcassets */,
+				F2C792C81E8BDD50000BBC7C /* LaunchScreen.storyboard */,
+				F2C792CB1E8BDD50000BBC7C /* Info.plist */,
+				F2C792B71E8BDD50000BBC7C /* Supporting Files */,
+			);
+			path = LoHasBandAid;
+			sourceTree = "<group>";
+		};
+		F2C792B71E8BDD50000BBC7C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F2C792B81E8BDD50000BBC7C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F2C792D31E8BDD50000BBC7C /* LoHasBandAidTests */ = {
+			isa = PBXGroup;
+			children = (
+				F2C792D41E8BDD50000BBC7C /* LoHasBandAidTests.m */,
+				F2C792D61E8BDD50000BBC7C /* Info.plist */,
+			);
+			path = LoHasBandAidTests;
+			sourceTree = "<group>";
+		};
+		F2C792DE1E8BDD50000BBC7C /* LoHasBandAidUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F2C792DF1E8BDD50000BBC7C /* LoHasBandAidUITests.m */,
+				F2C792E11E8BDD50000BBC7C /* Info.plist */,
+			);
+			path = LoHasBandAidUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F2C792B31E8BDD50000BBC7C /* LoHasBandAid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2C792E41E8BDD50000BBC7C /* Build configuration list for PBXNativeTarget "LoHasBandAid" */;
+			buildPhases = (
+				F2C792B01E8BDD50000BBC7C /* Sources */,
+				F2C792B11E8BDD50000BBC7C /* Frameworks */,
+				F2C792B21E8BDD50000BBC7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoHasBandAid;
+			productName = LoHasBandAid;
+			productReference = F2C792B41E8BDD50000BBC7C /* LoHasBandAid.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F2C792CF1E8BDD50000BBC7C /* LoHasBandAidTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2C792E71E8BDD50000BBC7C /* Build configuration list for PBXNativeTarget "LoHasBandAidTests" */;
+			buildPhases = (
+				F2C792CC1E8BDD50000BBC7C /* Sources */,
+				F2C792CD1E8BDD50000BBC7C /* Frameworks */,
+				F2C792CE1E8BDD50000BBC7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2C792D21E8BDD50000BBC7C /* PBXTargetDependency */,
+			);
+			name = LoHasBandAidTests;
+			productName = LoHasBandAidTests;
+			productReference = F2C792D01E8BDD50000BBC7C /* LoHasBandAidTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F2C792DA1E8BDD50000BBC7C /* LoHasBandAidUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2C792EA1E8BDD50000BBC7C /* Build configuration list for PBXNativeTarget "LoHasBandAidUITests" */;
+			buildPhases = (
+				F2C792D71E8BDD50000BBC7C /* Sources */,
+				F2C792D81E8BDD50000BBC7C /* Frameworks */,
+				F2C792D91E8BDD50000BBC7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2C792DD1E8BDD50000BBC7C /* PBXTargetDependency */,
+			);
+			name = LoHasBandAidUITests;
+			productName = LoHasBandAidUITests;
+			productReference = F2C792DB1E8BDD50000BBC7C /* LoHasBandAidUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2C792AC1E8BDD50000BBC7C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "LoHas-Tech";
+				TargetAttributes = {
+					F2C792B31E8BDD50000BBC7C = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					F2C792CF1E8BDD50000BBC7C = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F2C792B31E8BDD50000BBC7C;
+					};
+					F2C792DA1E8BDD50000BBC7C = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F2C792B31E8BDD50000BBC7C;
+					};
+				};
+			};
+			buildConfigurationList = F2C792AF1E8BDD50000BBC7C /* Build configuration list for PBXProject "LoHasBandAid" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F2C792AB1E8BDD50000BBC7C;
+			productRefGroup = F2C792B51E8BDD50000BBC7C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2C792B31E8BDD50000BBC7C /* LoHasBandAid */,
+				F2C792CF1E8BDD50000BBC7C /* LoHasBandAidTests */,
+				F2C792DA1E8BDD50000BBC7C /* LoHasBandAidUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2C792B21E8BDD50000BBC7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2C792CA1E8BDD50000BBC7C /* LaunchScreen.storyboard in Resources */,
+				F2C792C71E8BDD50000BBC7C /* Assets.xcassets in Resources */,
+				F2C792C51E8BDD50000BBC7C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2C792CE1E8BDD50000BBC7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2C792D91E8BDD50000BBC7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2C792B01E8BDD50000BBC7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2C792BC1E8BDD50000BBC7C /* AppDelegate.m in Sources */,
+				F2C792BF1E8BDD50000BBC7C /* MasterViewController.m in Sources */,
+				F2C792B91E8BDD50000BBC7C /* main.m in Sources */,
+				F2C792C21E8BDD50000BBC7C /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2C792CC1E8BDD50000BBC7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2C792D51E8BDD50000BBC7C /* LoHasBandAidTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2C792D71E8BDD50000BBC7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2C792E01E8BDD50000BBC7C /* LoHasBandAidUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F2C792D21E8BDD50000BBC7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2C792B31E8BDD50000BBC7C /* LoHasBandAid */;
+			targetProxy = F2C792D11E8BDD50000BBC7C /* PBXContainerItemProxy */;
+		};
+		F2C792DD1E8BDD50000BBC7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2C792B31E8BDD50000BBC7C /* LoHasBandAid */;
+			targetProxy = F2C792DC1E8BDD50000BBC7C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F2C792C31E8BDD50000BBC7C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2C792C41E8BDD50000BBC7C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F2C792C81E8BDD50000BBC7C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2C792C91E8BDD50000BBC7C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F2C792E21E8BDD50000BBC7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		F2C792E31E8BDD50000BBC7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F2C792E51E8BDD50000BBC7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LoHasBandAid/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zxq.LoHasBandAid;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F2C792E61E8BDD50000BBC7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LoHasBandAid/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zxq.LoHasBandAid;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F2C792E81E8BDD50000BBC7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LoHasBandAidTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zxq.LoHasBandAidTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoHasBandAid.app/LoHasBandAid";
+			};
+			name = Debug;
+		};
+		F2C792E91E8BDD50000BBC7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LoHasBandAidTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zxq.LoHasBandAidTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoHasBandAid.app/LoHasBandAid";
+			};
+			name = Release;
+		};
+		F2C792EB1E8BDD50000BBC7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LoHasBandAidUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zxq.LoHasBandAidUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LoHasBandAid;
+			};
+			name = Debug;
+		};
+		F2C792EC1E8BDD50000BBC7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LoHasBandAidUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zxq.LoHasBandAidUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LoHasBandAid;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2C792AF1E8BDD50000BBC7C /* Build configuration list for PBXProject "LoHasBandAid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2C792E21E8BDD50000BBC7C /* Debug */,
+				F2C792E31E8BDD50000BBC7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2C792E41E8BDD50000BBC7C /* Build configuration list for PBXNativeTarget "LoHasBandAid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2C792E51E8BDD50000BBC7C /* Debug */,
+				F2C792E61E8BDD50000BBC7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F2C792E71E8BDD50000BBC7C /* Build configuration list for PBXNativeTarget "LoHasBandAidTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2C792E81E8BDD50000BBC7C /* Debug */,
+				F2C792E91E8BDD50000BBC7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F2C792EA1E8BDD50000BBC7C /* Build configuration list for PBXNativeTarget "LoHasBandAidUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2C792EB1E8BDD50000BBC7C /* Debug */,
+				F2C792EC1E8BDD50000BBC7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F2C792AC1E8BDD50000BBC7C /* Project object */;
+}
