@@ -8,6 +8,8 @@
 
 #import "MasterViewController.h"
 #import "DetailViewController.h"
+#import "LoginViewController.h"
+#import "LoginManager.h"
 
 @interface MasterViewController ()
 
@@ -30,6 +32,21 @@
 - (void)viewWillAppear:(BOOL)animated {
     self.clearsSelectionOnViewWillAppear = self.splitViewController.isCollapsed;
     [super viewWillAppear:animated];
+    
+    // 是否登录
+    LoginManager *loginManager = [[LoginManager alloc] init];
+    User *currentUser = [loginManager getLastUserInfo];
+    if (!currentUser.isLatestLogin) {
+        // 无需登录
+        EZLog(@"直接进入，无需登录");
+    }
+    else {
+        LoginViewController *login = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:[NSBundle mainBundle]];
+        [self.splitViewController presentViewController:login animated:YES completion:^{
+            
+        }];
+    }
+
 }
 
 

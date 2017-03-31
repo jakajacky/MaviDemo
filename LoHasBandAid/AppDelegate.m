@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "DetailViewController.h"
+#import "DCMVVMConfiguration.h"
 
 @interface AppDelegate () <UISplitViewControllerDelegate>
 
@@ -17,6 +18,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [self initializeMVVM];
     // Override point for customization after application launch.
     UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
     UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
@@ -62,6 +64,23 @@
     } else {
         return NO;
     }
+}
+
+- (void)initializeMVVM
+{
+    DCMVVMConfiguration *config = [DCMVVMConfiguration getInstance];
+    
+//    config.appGroupId                      = kAppGroupIdentifier;
+    
+    config.httpRquestAllowsLogHeader       = kHttpRequestAllowsLogHeader;
+    config.httpRquestAllowsLogMethod       = kHttpRequestAllowsLogMethod;
+    config.httpRquestAllowsLogResponseGET  = kHttpRequestAllowsLogResponseGET;
+    config.httpRquestAllowsLogResponsePOST = kHttpRequestAllowsLogResponsePOST;
+    config.httpRquestAllowsLogRequestError = kHttpRequestAllowsLogRequestError;
+    
+//    config.databaseShouldEncrypt           = kDatabaseShouldEncrypt;
+//    config.databaseAllowsLogStatement      = kDatabaseAllowsLogStatement;
+//    config.databaseAllowsLogError          = kDatabaseAllowsLogError;
 }
 
 @end

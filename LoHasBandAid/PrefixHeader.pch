@@ -1,0 +1,14 @@
+//
+//  PrefixHeader.pch
+//  Mavic
+//
+//  Created by zhangxiaoqiang on 2017/3/30.
+//  Copyright © 2017年 LoHas-Tech. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "DebugConfig.h"
+
+#endif /* PrefixHeader_pch */
