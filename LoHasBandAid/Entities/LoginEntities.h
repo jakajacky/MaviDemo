@@ -13,9 +13,8 @@
 
 @property (copy) NSString *password;
 
-@property        BOOL      isLatestLogin;
-
-
+@property        BOOL     isLatestLogin;
+@property        BOOL     isRememberPwd;
 
 @property (copy) NSString *Id;//" : "149077228125127828",
 @property (copy) NSString *login_name;//" : "18515982821",

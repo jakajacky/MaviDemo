@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LoHasBandAid/Login/ViewController/LoginViewController.m"
-            timestampString = "512643452.340107"
+            timestampString = "512644782.446975"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
             landmarkName = "-loginBtnDidClicked:"
             landmarkType = "7">
             <Locations>
@@ -26,12 +26,12 @@
                   moduleName = "Mavic"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/xufeng/Band-aid/LoHasBandAid/LoHasBandAid/Login/ViewController/LoginViewController.m"
-                  timestampString = "512643452.426881"
+                  timestampString = "512654225.596436"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "91"
-                  endingLineNumber = "91"
-                  offsetFromSymbolStart = "384">
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "520">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -41,11 +41,11 @@
                   moduleName = "Mavic"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/xufeng/Band-aid/LoHasBandAid/LoHasBandAid/Login/ViewController/LoginViewController.m"
-                  timestampString = "512643452.428321"
+                  timestampString = "512654225.598029"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "93"
-                  endingLineNumber = "93"
+                  startingLineNumber = "94"
+                  endingLineNumber = "94"
                   offsetFromSymbolStart = "12">
                </Location>
             </Locations>
@@ -100,11 +100,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LoHasBandAid/Login/ViewController/LoginViewController.m"
-            timestampString = "512643452.340107"
+            timestampString = "512644782.446975"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
             landmarkName = "-loginBtnDidClicked:"
             landmarkType = "7">
          </BreakpointContent>
@@ -132,12 +132,60 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LoHasBandAid/Login/ViewController/LoginViewController.m"
-            timestampString = "512643593.210834"
+            timestampString = "512645181.917215"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "182"
+            endingLineNumber = "182"
+            landmarkName = "-tableView:didSelectRowAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LoHasBandAid/Login/ViewController/LoginViewController.m"
+            timestampString = "512644772.154465"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "-loginBtnDidClicked:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LoHasBandAid/Login/ViewController/LoginViewController.m"
+            timestampString = "512644943.015981"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "177"
             endingLineNumber = "177"
             landmarkName = "-tableView:didSelectRowAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LoHasBandAid/Login/View/LoginView.m"
+            timestampString = "512654479.388535"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "153"
+            endingLineNumber = "153"
+            landmarkName = "-keyboradWillAppear:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -81,6 +81,7 @@
             User *user         = [[User alloc] initWithDictionary:dic];
             user.isLatestLogin = YES;
             user.password      = pwd;
+            user.isRememberPwd = _loginV.rememberPwd.selected;
             
             LoginManager *lm   = [LoginManager defaultManager];
             lm.currentUser     = user;
@@ -174,7 +175,14 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     User *user = self.historyUsers[indexPath.row];
     _loginV.nameField.text     = user.login_name;
-    _loginV.passWordField.text = user.password;
+    if (user.isRememberPwd) {
+        _loginV.passWordField.text = user.password;
+        _loginV.rememberPwd.selected = YES;
+    }
+    else {
+        _loginV.passWordField.text = @"";
+        _loginV.rememberPwd.selected = NO;
+    }
     
     [self dropUserDidClicked:_loginV.historyUserDrop];
 }

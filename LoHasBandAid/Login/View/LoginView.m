@@ -38,6 +38,7 @@
     NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
     [center addObserver:self selector:@selector(keyboradWillAppear:) name:UIKeyboardWillShowNotification object:nil];
     [center addObserver:self selector:@selector(keyboradWillDisappear:) name:UIKeyboardWillHideNotification object:nil];
+    [center addObserver:self selector:@selector(keyboradDidAppear:) name:UIKeyboardDidShowNotification object:nil];
 }
 
 - (void)reloadViews {
@@ -84,7 +85,7 @@
     
 }
 
-#pragma mark 灵活设置view的圆角
+#pragma mark - 灵活设置view的圆角
 - (void)setViewCornersWithView:(UIView *)view byRoundingCorners:(UIRectCorner)corner {
     UIBezierPath *maskPath  = [UIBezierPath bezierPathWithRoundedRect:view.bounds
                                                     byRoundingCorners:corner
@@ -95,10 +96,7 @@
     view.layer.mask         = maskLayer;
 }
 
-- (IBAction)rememberPwd:(UIButton *)sender {
-    sender.selected = !sender.selected;
-}
-
+#pragma mark - 注册和登录 页面的切换
 - (IBAction)LoginViewAppear:(id)sender {
     
     if (_isLoginBtnSelected) {
@@ -149,7 +147,7 @@
 
 #pragma mark - 监听键盘事件
 - (void)keyboradWillAppear:(NSNotification *)notifi {
-    
+       
     if (_isKboradAppear) {
 
         return;
@@ -163,16 +161,28 @@
     
 }
 
-
 - (void)keyboradWillDisappear:(NSNotification *)notifi {
     _isKboradAppear = NO;
     _mainContainerView.transform = CGAffineTransformMakeTranslation(0, 0);
     
 }
 
+- (void)keyboradDidAppear:(NSNotification *)notifi {
+    if (_nameField.editing) {
+        [_nameField selectAll:self];
+    }
+}
+
+#pragma mark - 文本框Delegate
 - (void)textFieldDidBeginEditing:(UITextField *)textField {
     
-
+    [UIView animateWithDuration:0.5 animations:^{
+        CGFloat x      = _historyUserDropList.origin.x;
+        CGFloat y      = _historyUserDropList.origin.y;
+        CGFloat width  = _historyUserDropList.width;
+        CGRect frame = CGRectMake(x, y, width, 0);
+        _historyUserDropList.frame = frame;
+    }];
     
 }
 
@@ -206,6 +216,11 @@
     sender.selected = !sender.selected;
     
 }
+
+- (IBAction)rememberPwdClicked:(UIButton *)sender {
+    sender.selected = !sender.selected;
+}
+
 
 
 @end
