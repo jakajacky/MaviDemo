@@ -9,8 +9,19 @@
 #import <Foundation/Foundation.h>
 #import "LoginEntities.h"
 
-@interface LoginManager : NSObject
+@interface LoginManager : NSObject<NSCopying>
 
-- (User *)getLastUserInfo;
+@property (nonatomic, strong) User *currentUser;
+
+/**
+ * 单例
+ */
+
++ (instancetype)defaultManager;
+
+/**
+ * 数据库中 获取上一次登录的用户
+ */
+- (void)getLastUserInfo;
 
 @end

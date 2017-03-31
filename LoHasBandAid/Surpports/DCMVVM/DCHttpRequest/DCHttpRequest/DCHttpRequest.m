@@ -62,7 +62,7 @@
 - (void)startWithSuccess:(void (^)(id))success
                  failure:(void (^)(NSInteger, NSString *, NSDictionary *))failure
 {
-  if (!self.reachability.isReachable) {
+  if (self.reachability.isReachable) {
     if (self.allowsLogRequestError) {
       NSLog(@"\nmethod:%@\nerrorCode:%d\n%@\n\n", self.method, 0, @"无法连接网络");
     }
@@ -122,19 +122,25 @@
     }
     
     if (operation.response.statusCode == 200) {
-      NSDictionary *error = responseObject[@"Error"];
-      NSDictionary *data  = responseObject[@"Data"];
-      
-      if (error && ![error isKindOfClass:[NSNull class]]) {
-        NSInteger  errCode = [error[@"Code"] integerValue];
-        NSString  *errMsg  = error[@"Message"];
-        if (allowsLogRequestError) {
-          NSLog(@"\nmethod:%@\nerrorCode:%zd\n%@\n\n", method, errCode, errMsg);
-        }
-        failure(errCode, errMsg, data);
+      NSDictionary *data = responseObject[@"data"];
+      NSInteger  code    = [responseObject[@"code"] integerValue];
+      NSString  *msg     = responseObject[@"msg"];
+      NSString  *errMsg  = responseObject[@"error"][0];
+      if (code == 10000) {
+          success(data);
+        
+      }
+      else if (code == 90000) {
+          if (allowsLogRequestError) {
+              NSLog(@"\nmethod:%@\nerrorCode:%zd\n%@\n\n", method, code, errMsg);
+          }
+          failure(code, errMsg, data);
       }
       else {
-        success(data);
+          if (allowsLogRequestError) {
+              NSLog(@"\nmethod:%@\nerrorCode:%zd\n%@\n\n", method, code, errMsg);
+          }
+          failure(code, msg, data);
       }
     }
   } failure:^(AFHTTPRequestOperation *operation, NSError *error) {

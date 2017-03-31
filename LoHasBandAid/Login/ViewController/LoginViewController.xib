@@ -207,6 +207,7 @@
                 <outlet property="containerView" destination="Okp-eO-9bC" id="j5r-9d-1kR"/>
                 <outlet property="lineView" destination="V9Q-34-MIe" id="wLb-8X-PiK"/>
                 <outlet property="login" destination="PIs-1J-bZG" id="OZe-Us-bIY"/>
+                <outlet property="loginApp" destination="bKC-XL-Xqz" id="qy6-16-9aD"/>
                 <outlet property="mainContainerView" destination="miu-dM-yjI" id="BXB-OA-CxI"/>
                 <outlet property="nameField" destination="btA-hg-mIb" id="R2L-kb-UDM"/>
                 <outlet property="passWordField" destination="reb-L7-XyK" id="e1A-wI-huh"/>

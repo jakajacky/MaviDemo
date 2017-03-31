@@ -7,8 +7,11 @@
 //
 
 #import "DetailViewController.h"
-
+#import "LoginManager.h"
+#import "LoginApi.h"
 @interface DetailViewController ()
+
+@property (nonatomic, strong) LoginApi *api;
 
 @end
 
@@ -34,6 +37,20 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - 暂时模拟退出帐号
+- (IBAction)logoutCurrentUser:(id)sender {
+    
+    User *user = [LoginManager defaultManager].currentUser;
+    user.isLatestLogin = NO;
+    
+    [self.api saveCurrentUser:user];
+    
+    UIViewController *masterVC = self.splitViewController.viewControllers.firstObject;
+    [masterVC viewWillAppear:YES];
+    
+}
+
+
 
 #pragma mark - Managing the detail item
 
@@ -46,5 +63,9 @@
     }
 }
 
+#pragma mark - private properties
+- (LoginApi *)api {
+    return [LoginApi biz];
+}
 
 @end

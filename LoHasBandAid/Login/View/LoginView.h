@@ -22,5 +22,8 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *rememberPwd;
 
+@property (weak, nonatomic) IBOutlet UIButton *loginApp;
+
+
 
 @end

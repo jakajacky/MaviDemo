@@ -11,7 +11,7 @@
 @implementation User
 
 + (NSArray *)primaryKeys {
-    return @[@"phoneNumber"];
+    return @[@"login_name"];
 }
 
 @end

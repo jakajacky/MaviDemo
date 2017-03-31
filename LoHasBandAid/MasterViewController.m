@@ -34,11 +34,15 @@
     [super viewWillAppear:animated];
     
     // 是否登录
-    LoginManager *loginManager = [[LoginManager alloc] init];
-    User *currentUser = [loginManager getLastUserInfo];
-    if (!currentUser.isLatestLogin) {
+    LoginManager *loginManager = [LoginManager defaultManager];
+    if (!loginManager.currentUser) {
+        [loginManager getLastUserInfo];
+    }
+    if (loginManager.currentUser.isLatestLogin) {
         // 无需登录
         EZLog(@"直接进入，无需登录");
+        // 验证登录信息
+        
     }
     else {
         LoginViewController *login = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:[NSBundle mainBundle]];

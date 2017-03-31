@@ -7,16 +7,36 @@
 //
 
 #import "LoginManager.h"
+#import "LoginApi.h"
 
 @implementation LoginManager
 
-- (User *)getLastUserInfo {
-    User *user = [[User alloc] init];
-    user.userName = @"18515982821";
-    user.password = @"123456";
-    user.isLatestLogin = YES;
-    
-    return user;
+static LoginManager *loginM = nil;
+
++ (instancetype)defaultManager {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        loginM = [[self alloc] init];
+    });
+    return loginM;
+}
+
++ (instancetype)allocWithZone:(struct _NSZone *)zone {
+    @synchronized (self) {
+        if (!loginM) {
+            loginM = [super allocWithZone:zone];
+        }
+        return loginM;
+    }
+}
+
+- (id)copyWithZone:(NSZone *)zone {
+    return self;
+}
+
+- (void)getLastUserInfo {
+    LoginApi *api = [LoginApi biz];
+    _currentUser = [api getCurrentUserFormMainDB];
 }
 
 @end

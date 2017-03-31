@@ -176,10 +176,10 @@
 
 - (void)textFieldDidEndEditing:(UITextField *)textField reason:(UITextFieldDidEndEditingReason)reason {
     if (textField.tag == 111) {
-        if (![textField.text isValidPhoneNumber]) {
+        if (![textField.text isValidPhoneNumber] && textField.text.length>0) {
             // 手机号格式不正确
             MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.containerView animated:YES];
-            hud.labelText = @"请输入正确的手机账号";
+            hud.labelText = @"请输入正确的手机号";
             hud.mode = MBProgressHUDModeText;
             dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 1.5 * NSEC_PER_SEC);
             dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
