@@ -18,4 +18,6 @@
 
 
 - (User *)getCurrentUserFormMainDB;
+
+- (NSArray *)getUsersFormMainDB;
 @end

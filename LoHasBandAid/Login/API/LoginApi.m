@@ -83,6 +83,16 @@
     return result.firstObject;
 }
 
+- (NSArray *)getUsersFormMainDB {
+    NSString *sql = [NSString stringWithFormat:
+                     @"SELECT * FROM %@",
+                     [User tableName]];
+    
+    NSArray *result = [self.mainDatabase query:sql withArguments:@[] convertTo:[User class]];
+    
+    return result;
+}
+
 - (DCDatabase *)mainDatabase {
     return [self database:@"main.db" withKey:@"1234567890ABCDEF"];
 }

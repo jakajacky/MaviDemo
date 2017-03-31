@@ -80,6 +80,8 @@
     self.nameField.rightViewMode     = UITextFieldViewModeAlways;
     self.passWordField.rightViewMode = UITextFieldViewModeAlways;
     
+    self.historyUserDropList.backgroundColor = [UIColor clearColor];
+    
 }
 
 #pragma mark 灵活设置view的圆角
@@ -192,11 +194,6 @@
 }
 
 #pragma mark 文本框rightview点击事件
-- (IBAction)nameFieldRightViewClicked:(id)sender {
-    EZLog(@"user click");
-    
-}
-
 - (IBAction)pwdFieldRightViewClicked:(UIButton *)sender {
     EZLog(@"pwd click");
     self.passWordField.secureTextEntry = sender.selected;

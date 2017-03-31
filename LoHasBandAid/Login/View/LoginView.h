@@ -24,6 +24,11 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *loginApp;
 
+@property (weak, nonatomic) IBOutlet UIButton *historyUserDrop;
+
+@property (weak, nonatomic) IBOutlet UITableView *historyUserDropList;
+
+
 
 
 @end

@@ -53,7 +53,6 @@
 
 
 #pragma mark - Managing the detail item
-
 - (void)setDetailItem:(NSDate *)newDetailItem {
     if (_detailItem != newDetailItem) {
         _detailItem = newDetailItem;
@@ -65,7 +64,10 @@
 
 #pragma mark - private properties
 - (LoginApi *)api {
-    return [LoginApi biz];
+    if (!_api) {
+        _api = [LoginApi biz];
+    }
+    return _api;
 }
 
 @end

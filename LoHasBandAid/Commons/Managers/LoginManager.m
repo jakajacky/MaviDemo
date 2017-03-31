@@ -9,6 +9,12 @@
 #import "LoginManager.h"
 #import "LoginApi.h"
 
+@interface LoginManager ()
+
+@property (nonatomic, strong) LoginApi *api;
+
+@end
+
 @implementation LoginManager
 
 static LoginManager *loginM = nil;
@@ -35,8 +41,14 @@ static LoginManager *loginM = nil;
 }
 
 - (void)getLastUserInfo {
-    LoginApi *api = [LoginApi biz];
-    _currentUser = [api getCurrentUserFormMainDB];
+    _currentUser = [self.api getCurrentUserFormMainDB];
+}
+
+- (LoginApi *)api {
+    if (!_api) {
+        _api = [LoginApi biz];
+    }
+    return _api;
 }
 
 @end
